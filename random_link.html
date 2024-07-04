@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Form Redirect</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            var forms = [
+                "https://docs.google.com/forms/d/1APRvFG-yIoT6Y9tHmWvIk8QVgKlFGc6YYesCCslacv8/edit",
+                "https://docs.google.com/forms/d/1q3mBUampdWMfwxETX4DN3309ogRXuNIveUSCF_uZeLQ/edit",
+                "https://docs.google.com/forms/d/19hezpPTsZx-3VDHHO2PZCD4RrKJtg_CO0vPgQsC3O9o/edit",
+                "https://docs.google.com/forms/d/1DtbkhtyNkX-mXIM-9ST0YhyVFMQGKGz1_3qEC7Nyyf0/edit"
+            ];
+            var randomForm = forms[Math.floor(Math.random() * forms.length)];
+            window.location.href = randomForm;
+        }
+    </script>
+</head>
+<body>
+    <h1>Loading...</h1>
+</body>
+</html>
